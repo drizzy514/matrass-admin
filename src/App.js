@@ -3,12 +3,10 @@ import {Route, Switch}  from "react-router-dom";
 
 
 // pages
-import Home from "./pages/Home/Home"
 import Admin from './pages/Admin/Admin'
 import Login from './pages/Login/Login'
 // routes
 import Private from './Routes/Private';
-import Public from './Routes/Public'
 
 function App() {
 return <>
@@ -16,8 +14,7 @@ return <>
 
 
         <Switch>
-          <Route exact path='/' component={Home}/>
-          <Public path='/login' component={Login} />
+          <Route exact path='/' component={Login}/>
           <Private path='/admin' component={Admin} />
         </Switch>
 </>
