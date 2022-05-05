@@ -17,7 +17,6 @@ return <>
 
         <Switch>
           <Route exact path='/' component={Login}/>
-          <Public  path='/login' component={Login} />
           <Private path='/admin' component={Admin} />
         </Switch>
 </>
